@@ -21,7 +21,21 @@ do
             Console.WriteLine(MessageHandler.YourChoiceRock);
             userEntity.Entity = "Rock";
             computerEntity.Entity = ComputerInputHandler.ComputerInput();
+            MessageHandler.PrintComputerSelection(computerEntity.Entity);
+            resolution.Resolution = 
 
+            if (resolution.Resolution == "Win")
+            {
+                userWin++;
+            }
+            else if (resolution.Resolution == "Loss")
+            {
+                computerWin++;
+            }
+            else
+            {
+                tie++;
+            }
             break;
         case "2": //Paper
             break;

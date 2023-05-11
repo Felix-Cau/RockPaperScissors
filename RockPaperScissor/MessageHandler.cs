@@ -17,20 +17,20 @@ namespace RockPaperScissors
         public static string ComputerChoiceScissors => "The computer chose Scissors.";
         public static string ExitingProgram => "Exiting program. Press any key to continue.";
 
-        //public static void PrintComputerSelection(int a)
-        //{
-        //    if (a == 1)
-        //    {
-        //        Console.WriteLine(ComputerChoiceRock);
-        //    }
-        //    else if (a == 2)
-        //    {
-        //        Console.WriteLine(ComputerChoicePaper);
-        //    }
-        //    else if (a == 3)
-        //    {
-        //        Console.WriteLine(ComputerChoiceScissors);
-        //    }
+        public static void PrintComputerSelection(string a)
+        {
+            if (a == "Rock")
+            {
+                Console.WriteLine(ComputerChoiceRock);
+            }
+            else if (a == "Paper")
+            {
+                Console.WriteLine(ComputerChoicePaper);
+            }
+            else if (a == "Scissors")
+            {
+                Console.WriteLine(ComputerChoiceScissors);
+            }
         }
     }
 }

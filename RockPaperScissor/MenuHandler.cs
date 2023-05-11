@@ -14,12 +14,6 @@ namespace RockPaperScissors
             OperationOptions();
         }
 
-        public static void SubMenu()
-        {
-            Console.WriteLine("Do you want to try again or do you give up?");
-            OperationOptions();
-        }
-
         public static void OperationOptions()
         {
             var operationOptions = new List<string>()
