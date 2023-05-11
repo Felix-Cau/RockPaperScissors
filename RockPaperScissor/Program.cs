@@ -15,6 +15,9 @@ do
     {
         case "1":
             //Rock
+            Console.WriteLine(MessageHandler.YourChoiceRock);
+            var computerSelection = ComputerInputHandler.ComputerInput();
+            MessageHandler.PrintComputerSelection(computerSelection);
 
             break;
         case "2":

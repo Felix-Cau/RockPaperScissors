@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    public class EventSolutions
+    public static class EventSolutions
     {
+        
     }
 }
