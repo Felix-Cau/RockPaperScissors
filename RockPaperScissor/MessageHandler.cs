@@ -8,6 +8,6 @@ namespace RockPaperScissors
 {
     public static class MessageHandler
     {
-
+        public static string InvalidInputMessage => "Invalid input, try again.";
     }
 }

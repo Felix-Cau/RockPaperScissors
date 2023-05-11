@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    public static class UserInputHandler
+    public class EventSolutions
     {
-        public static void AskForUserInput()
-        {
-            Console.WriteLine("Select your action: ");
-        }
     }
 }

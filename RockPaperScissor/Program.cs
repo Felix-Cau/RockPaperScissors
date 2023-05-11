@@ -14,16 +14,20 @@ do
     switch (userSelection)
     {
         case "1":
+            //Rock
 
             break;
         case "2":
+            //Paper
             break;
         case "3":
+            //Scissors
             break;
         case "4":
             keepGoing = false;
             break;
         default:
+            Console.WriteLine(MessageHandler.InvalidInputMessage);
             break;
     }
 

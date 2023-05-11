@@ -14,6 +14,12 @@ namespace RockPaperScissors
             OperationOptions();
         }
 
+        public static void SubMenu()
+        {
+            Console.WriteLine("Do you want to try again or do you give up?");
+            OperationOptions();
+        }
+
         public static void OperationOptions()
         {
             var operationOptions = new List<string>()
@@ -21,7 +27,7 @@ namespace RockPaperScissors
                 "1. Rock.",
                 "2. Paper.",
                 "3. Scissors.",
-                "4. End this torture, quit program."
+                "4. End this torture, exit program."
             };
 
             foreach (var option in operationOptions)

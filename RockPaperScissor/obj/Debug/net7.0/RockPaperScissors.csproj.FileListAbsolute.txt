@@ -3,3 +3,8 @@ C:\Development\RockPaperScissor\RockPaperScissor\obj\Debug\net7.0\RockPaperSciss
 C:\Development\RockPaperScissor\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.AssemblyInfoInputs.cache
 C:\Development\RockPaperScissor\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.AssemblyInfo.cs
 C:\Development\RockPaperScissor\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.csproj.CoreCompileInputs.cache
+C:\Development\RockPaperScissors\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.csproj.AssemblyReference.cache
+C:\Development\RockPaperScissors\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\RockPaperScissors\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.AssemblyInfoInputs.cache
+C:\Development\RockPaperScissors\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.AssemblyInfo.cs
+C:\Development\RockPaperScissors\RockPaperScissor\obj\Debug\net7.0\RockPaperScissors.csproj.CoreCompileInputs.cache

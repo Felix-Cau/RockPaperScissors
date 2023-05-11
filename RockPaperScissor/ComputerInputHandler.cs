@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    public static class UserInputHandler
+    public static class ComputerInputHandler
     {
-        public static void AskForUserInput()
+        public static int ComputerInput()
         {
-            Console.WriteLine("Select your action: ");
+            var computerInput = new Random().Next(1, 4);
+            return computerInput;
         }
     }
 }
