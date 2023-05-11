@@ -15,21 +15,22 @@ namespace RockPaperScissors
         public static string ComputerChoiceRock => "The computer chose Rock.";
         public static string ComputerChoicePaper => "The computer chose Paper.";
         public static string ComputerChoiceScissors => "The computer chose Scissors.";
+        public static string ExitingProgram => "Exiting program. Press any key to continue.";
 
-        public static void PrintComputerSelection(int a)
-        {
-            if (a == 1)
-            {
-                Console.WriteLine(ComputerChoiceRock);
-            }
-            else if (a == 2)
-            {
-                Console.WriteLine(ComputerChoicePaper);
-            }
-            else if (a == 3)
-            {
-                Console.WriteLine(ComputerChoiceScissors);
-            }
+        //public static void PrintComputerSelection(int a)
+        //{
+        //    if (a == 1)
+        //    {
+        //        Console.WriteLine(ComputerChoiceRock);
+        //    }
+        //    else if (a == 2)
+        //    {
+        //        Console.WriteLine(ComputerChoicePaper);
+        //    }
+        //    else if (a == 3)
+        //    {
+        //        Console.WriteLine(ComputerChoiceScissors);
+        //    }
         }
     }
 }

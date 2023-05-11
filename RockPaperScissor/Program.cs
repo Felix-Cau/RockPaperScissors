@@ -2,6 +2,8 @@
 
 var userWin = 0;
 var computerWin = 0;
+var userEntity = new Entities(); //Make it a string?
+var computerEntity = new Entities(); //Make it a string?
 
 bool keepGoing = true;
 
@@ -16,8 +18,9 @@ do
         case "1":
             //Rock
             Console.WriteLine(MessageHandler.YourChoiceRock);
+            userEntity.Entity = "Rock";
             var computerSelection = ComputerInputHandler.ComputerInput();
-            MessageHandler.PrintComputerSelection(computerSelection);
+            computerEntity.Entity = ComputerInputHandler.ComputerOutput(computerSelection);
 
             break;
         case "2":
@@ -28,6 +31,8 @@ do
             break;
         case "4":
             keepGoing = false;
+            Console.WriteLine(MessageHandler.ExitingProgram);
+            Console.ReadKey();
             break;
         default:
             Console.WriteLine(MessageHandler.InvalidInputMessage);

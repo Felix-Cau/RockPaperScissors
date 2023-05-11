@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    public static class EventSolutions
+    public class Entities
     {
-        public static CalculateSolution()
-        {
-
-        }
+        public string? Entity { get; set; }
     }
 }
