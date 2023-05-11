@@ -20,7 +20,7 @@ do
             computerEntity.Entity = ComputerInputHandler.ComputerInput();
             MessageHandler.PrintComputerSelection(computerEntity.Entity);
             resolution.Resolution = EventResolutions.CalculateResolution(userEntity.Entity, computerEntity.Entity);
-            EventResolutions.CalculateResult(resolution.Resolution);
+            EventResolutions.PrintAndSaveResult(resolution.Resolution);
             break;
         case "2": //Paper
             Console.WriteLine(MessageHandler.YourChoicePaper);
@@ -28,7 +28,7 @@ do
             computerEntity.Entity = ComputerInputHandler.ComputerInput();
             MessageHandler.PrintComputerSelection(computerEntity.Entity);
             resolution.Resolution = EventResolutions.CalculateResolution(userEntity.Entity, computerEntity.Entity);
-            EventResolutions.CalculateResult(resolution.Resolution);
+            EventResolutions.PrintAndSaveResult(resolution.Resolution);
             break;
         case "3": //Scissors
             Console.WriteLine(MessageHandler.YourChoiceScissors);
@@ -36,7 +36,7 @@ do
             computerEntity.Entity = ComputerInputHandler.ComputerInput();
             MessageHandler.PrintComputerSelection(computerEntity.Entity);
             resolution.Resolution = EventResolutions.CalculateResolution(userEntity.Entity, computerEntity.Entity);
-            EventResolutions.CalculateResult(resolution.Resolution);
+            EventResolutions.PrintAndSaveResult(resolution.Resolution);
             break;
         case "4":
             keepGoing = false;

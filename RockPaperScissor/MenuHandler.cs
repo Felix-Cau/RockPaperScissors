@@ -10,9 +10,9 @@ namespace RockPaperScissors
     {
         public static void MainMenu()
         {
-            Console.WriteLine("Welcome to my Rock Paper Scissors game.\nThe rules are as following: Rock beats Scissors, Paper beats Rock and Scissors beat Paper.\nSelect your operation and see if you beat the computer!");
+            MessageHandler.Welcome();
             OperationOptions();
-            Console.WriteLine($"\n{PrintStatistics}\n");
+            Console.WriteLine($"\n{PrintStatistics()}\n");
         }
 
         public static void OperationOptions()
@@ -31,9 +31,10 @@ namespace RockPaperScissors
             }
         }
 
-        public static void PrintStatistics()
+        public static string PrintStatistics()
         {
-            Console.WriteLine($"User wins: {GameResults.UserWin}\tComputer wins: {GameResults.ComputerWin}\tTies: {GameResults.Tie}");
+            var printStatistics = ($"User wins: {GameResults.UserWin}\tComputer wins: {GameResults.ComputerWin}\tTies: {GameResults.Tie}");
+            return printStatistics;
         }
 
  

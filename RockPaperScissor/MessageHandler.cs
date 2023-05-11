@@ -8,6 +8,11 @@ namespace RockPaperScissors
 {
     public static class MessageHandler
     {
+        private static string welcomeMessage => "Welcome to my Rock Paper Scissors game.\nThe rules are as following:\nRock beats Scissors, Paper beats Rock and Scissors beat Paper.\nSelect your operation and see if you beat the computer!";
+        public static void Welcome()
+        {
+            Console.WriteLine(welcomeMessage);
+        }
         public static string InvalidInputMessage => "Invalid input, try again.";
         public static string YourChoiceRock => "You chose Rock.";
         public static string YourChoicePaper => "You chose Paper.";
