@@ -12,7 +12,7 @@ namespace RockPaperScissors
         {
             var resolution = new Entities();
 
-            if (a == "Rock" && b == "Rock")
+            if (a == b)
             {
                 resolution.Resolution = "Tie";
                 return resolution.Resolution;
@@ -32,11 +32,6 @@ namespace RockPaperScissors
                 resolution.Resolution = "Win";
                 return resolution.Resolution;
             }
-            else if (a == "Paper" && b == "Paper")
-            {
-                resolution.Resolution = "Tie";
-                return resolution.Resolution;
-            }
             else if (a == "Paper" && b == "Scissors")
             {
                 resolution.Resolution = "Loss";
@@ -47,68 +42,11 @@ namespace RockPaperScissors
                 resolution.Resolution = "Loss";
                 return resolution.Resolution;
             }
-            else if (a == "Scissors" && b == "Paper")
+            else
             {
                 resolution.Resolution = "Win";
                 return resolution.Resolution;
             }
-            else
-            {
-                resolution.Resolution = "Loss";
-                return resolution.Resolution;
-            }
-
-            //switch (a)
-            //{
-            //    case "Rock":
-            //        if (b == "Rock")
-            //        {
-            //            resolution.Resolution = "Tie";
-            //            return resolution.Resolution;
-            //        }
-            //        else if (b == "Paper")
-            //        {
-            //            resolution.Resolution = "Loss";
-            //            return resolution.Resolution;
-            //        }
-            //        else
-            //        {
-            //            resolution.Resolution = "Win";
-            //            return resolution.Resolution;
-            //        }
-            //    case "Paper":
-            //        if (b == "Rock")
-            //        {
-            //            resolution.Resolution = "Win";
-            //            return resolution.Resolution;
-            //        }
-            //        else if (b == "Paper")
-            //        {
-            //            resolution.Resolution = "Tie";
-            //            return resolution.Resolution;
-            //        }
-            //        else
-            //        {
-            //            resolution.Resolution = "Loss";
-            //            return resolution.Resolution;
-            //        }
-            //    case "Scissors":
-            //        if (b == "Rock")
-            //        {
-            //            resolution.Resolution = "Loss";
-            //            return resolution.Resolution;
-            //        }
-            //        else if (b == "Paper")
-            //        {
-            //            resolution.Resolution = "Win";
-            //            return resolution.Resolution;
-            //        }
-            //        else
-            //        {
-            //            resolution.Resolution = "Tie";
-            //            return resolution.Resolution;
-            //        }
-            //}
         }
 
         public static void PrintAndSaveResult(string a)
