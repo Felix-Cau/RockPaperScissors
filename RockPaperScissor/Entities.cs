@@ -9,5 +9,6 @@ namespace RockPaperScissors
     public class Entities
     {
         public string? Entity { get; set; }
+        public string? Resolution { get; set; }
     }
 }

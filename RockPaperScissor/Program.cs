@@ -2,8 +2,10 @@
 
 var userWin = 0;
 var computerWin = 0;
-var userEntity = new Entities(); //Make it a string?
-var computerEntity = new Entities(); //Make it a string?
+var tie = 0;
+var resolution = new Entities();
+var userEntity = new Entities();
+var computerEntity = new Entities();
 
 bool keepGoing = true;
 
@@ -15,19 +17,15 @@ do
 
     switch (userSelection)
     {
-        case "1":
-            //Rock
+        case "1": //Rock
             Console.WriteLine(MessageHandler.YourChoiceRock);
             userEntity.Entity = "Rock";
-            var computerSelection = ComputerInputHandler.ComputerInput();
-            computerEntity.Entity = ComputerInputHandler.ComputerOutput(computerSelection);
+            computerEntity.Entity = ComputerInputHandler.ComputerInput();
 
             break;
-        case "2":
-            //Paper
+        case "2": //Paper
             break;
-        case "3":
-            //Scissors
+        case "3": //Scissors
             break;
         case "4":
             keepGoing = false;
