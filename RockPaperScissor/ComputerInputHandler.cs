@@ -10,7 +10,8 @@ namespace RockPaperScissors
     {
         public static string ComputerInput()
         {
-            var computerInput = new Random().Next(1, 4);
+            Random randomComputerInput = new Random();
+            var computerInput = randomComputerInput.Next(1, 4);
             var computerSelection = new Entities();
             computerSelection.Entity = ComputerSelection(computerInput);
             return computerSelection.Entity;
@@ -20,19 +21,16 @@ namespace RockPaperScissors
         {
             if (a == 1)
             {
-                Console.WriteLine(MessageHandler.ComputerChoiceRock);
                 var rock = "Rock";
                 return rock;
             }
             else if (a == 2)
             {
-                Console.WriteLine(MessageHandler.ComputerChoicePaper);
                 var paper = "Paper";
                 return paper;
             }
             else
             {
-                Console.WriteLine(MessageHandler.ComputerChoiceScissors);
                 var scissors = "Scissors";
                 return scissors;
             }
