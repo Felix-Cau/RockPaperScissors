@@ -12,6 +12,7 @@ namespace RockPaperScissors
         {
             Console.WriteLine("Welcome to my Rock Paper Scissors game.\nThe rules are as following: Rock beats Scissors, Paper beats Rock and Scissors beat Paper.\nSelect your operation and see if you beat the computer!");
             OperationOptions();
+            Console.WriteLine($"\n{PrintStatistics}\n");
         }
 
         public static void OperationOptions()
@@ -28,6 +29,11 @@ namespace RockPaperScissors
             {
                 Console.WriteLine(option);
             }
+        }
+
+        public static void PrintStatistics()
+        {
+            Console.WriteLine($"User wins: {GameResults.UserWin}\tComputer wins: {GameResults.ComputerWin}\tTies: {GameResults.Tie}");
         }
 
  

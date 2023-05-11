@@ -16,6 +16,9 @@ namespace RockPaperScissors
         public static string ComputerChoicePaper => "The computer chose Paper.";
         public static string ComputerChoiceScissors => "The computer chose Scissors.";
         public static string ExitingProgram => "Exiting program. Press any key to continue.";
+        public static string YouWon => "Congratulations, you won this round.";
+        public static string YouLose => "Sorry, you lost this round.";
+        public static string Tie => "It was a tie...";
 
         public static void PrintComputerSelection(string a)
         {

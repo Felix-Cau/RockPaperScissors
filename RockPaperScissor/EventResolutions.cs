@@ -71,5 +71,24 @@ namespace RockPaperScissors
                     }
             }
         }
+
+        public static void CalculateResult(string a)
+        {
+            if (a == "Win")
+            {
+                Console.WriteLine(MessageHandler.YouWon);
+                GameResults.UserWin++;
+            }
+            else if (a == "Loss")
+            {
+                Console.WriteLine(MessageHandler.YouLose);
+                GameResults.ComputerWin++;
+            }
+            else if (a == "Tie")
+            {
+                Console.WriteLine(MessageHandler.Tie);
+                GameResults.Tie++;
+            }
+        }
     }
 }
