@@ -1,3 +1,4 @@
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 using RockPaperScissors;
 
 namespace TestProject1
@@ -8,16 +9,14 @@ namespace TestProject1
         public void Tie()
         {
             //Arrange
-            Entities a = new();
-            a.Entity = "Rock";
-            
-            Entities b = new();
-            b.Entity = "Rock";
+            string a = "Rock";
+
+            string b = "Rock";
 
             Entities resolution = new();
 
             //Act
-            resolution.Resolution = EventResolutions.CalculateResolution(a.Entity, b.Entity);
+            resolution.Resolution = EventResolutions.CalculateResolution(a, b);
 
             //Assert
             Assert.Matches("Tie", resolution.Resolution);
@@ -27,16 +26,14 @@ namespace TestProject1
         public void Win()
         {
             //Arrange
-            Entities a = new();
-            a.Entity = "Paper";
+            string a = "paper";
 
-            Entities b = new();
-            b.Entity = "Rock";
+            string b = "Rock";
 
             Entities resolution = new();
 
             //Act
-            resolution.Resolution = EventResolutions.CalculateResolution(a.Entity, b.Entity);
+            resolution.Resolution = EventResolutions.CalculateResolution(a, b);
 
             //Assert
             Assert.Matches("Win", resolution.Resolution);
@@ -45,16 +42,14 @@ namespace TestProject1
         [Fact]
         public void Loss()
         {
-            Entities a = new();
-            a.Entity = "Rock";
+            string a = "Rock";
 
-            Entities b = new();
-            b.Entity = "Paper";
+            string b = "Paper";
 
             Entities resolution = new();
 
             //Act
-            resolution.Resolution = EventResolutions.CalculateResolution(a.Entity, b.Entity);
+            resolution.Resolution = EventResolutions.CalculateResolution(a, b);
 
             //Assert
             Assert.Matches("Loss", resolution.Resolution);

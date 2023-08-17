@@ -6,6 +6,8 @@ var computerEntity = new Entities();
 
 bool keepGoing = true;
 
+Utilities.CheckForExistingDirectory();
+
 do
 {
     MenuHandler.MainMenu();
