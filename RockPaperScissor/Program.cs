@@ -49,7 +49,18 @@ do
             Console.ReadKey();
             Console.Clear();
             break;
-        case "4":
+        case "4": //Reset
+            Console.WriteLine(MessageHandler.ResetMessage);
+            GameResults.ResetGameResult();
+            Console.WriteLine(MessageHandler.PressAnyKey);
+            Console.ReadKey();
+            Console.Clear();
+            break;
+        case "5": //Save game
+            break;
+        case "6": //Load game
+            break;
+        case "7":
             keepGoing = false;
             Console.WriteLine(MessageHandler.ExitingProgram);
             Console.ReadKey();

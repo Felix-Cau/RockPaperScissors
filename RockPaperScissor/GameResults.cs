@@ -11,5 +11,12 @@ namespace RockPaperScissors
         public static int UserWin { get; set; }
         public static int ComputerWin { get; set; }
         public static int Tie { get; set; }
+
+        public static void ResetGameResult()
+        {
+            UserWin = 0;
+            ComputerWin = 0;
+            Tie = 0;
+        }
     }
 }

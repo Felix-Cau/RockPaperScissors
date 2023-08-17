@@ -25,6 +25,7 @@ namespace RockPaperScissors
         public static string YouLose => "Sorry, you lost this round.";
         public static string Tie => "It was a tie...";
         public static string PressAnyKey => "Press any key to continue.";
+        public static string ResetMessage => "Resetting the game.";
 
         public static void PrintComputerSelection(string a)
         {

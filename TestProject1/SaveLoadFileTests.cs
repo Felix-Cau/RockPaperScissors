@@ -12,7 +12,16 @@ namespace TestProject1
     public class SaveLoadFileTests
     {
         [Fact]
-        public void 
+        public void SaveGameFileTest()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+        }
+
+        public void LoadGameFileTest()
         {
             //Arrange
 
