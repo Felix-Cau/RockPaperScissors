@@ -25,7 +25,7 @@ namespace RockPaperScissors
                 var userSaveFileName = userInput.Trim();
                 if (!String.IsNullOrEmpty(userSaveFileName))
                 {
-                    fileName = $"{userSaveFileName}.txt";
+                    fileName = $"{userSaveFileName}.json";
                     keepAsking = false;
                 }
                 else

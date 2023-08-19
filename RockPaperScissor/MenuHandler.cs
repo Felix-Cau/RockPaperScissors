@@ -24,7 +24,7 @@ namespace RockPaperScissors
                 "3. Scissors.",
                 "4. Reset game and start over.",
                 "5. Save game.",
-                "6. Load game",
+                "6. Load game.",
                 "7. End this torture, exit program."
             };
 

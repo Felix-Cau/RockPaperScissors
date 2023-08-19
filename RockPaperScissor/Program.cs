@@ -7,7 +7,6 @@ var computerEntity = new Entities();
 bool keepGoing = true;
 
 Utilities.CheckForExistingDirectory();
-//Utilities.LoadSavedGames();
 
 do
 {
@@ -58,6 +57,7 @@ do
             Console.Clear();
             break;
         case "5": //Save game
+            //Add previously saved game view thingie
             var fileName = UserInputHandler.AskUserToNameSaveFile();
             Utilities.SaveGame(fileName);
             Console.WriteLine(MessageHandler.SaveGameMessage);
