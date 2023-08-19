@@ -39,7 +39,7 @@ namespace TestProject1
             string path = Path.Combine(fileDirectory, fileName);
 
             //Act
-            Utilities.LoadSavedGames(fileName);
+            Utilities.LoadSaveGame(fileName);
 
             //Assert
             var jsonGameResultLoadedData = File.ReadAllText(path);

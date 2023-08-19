@@ -36,7 +36,7 @@ namespace RockPaperScissors
             File.WriteAllText(path, jsonGameResultInput);
         }
 
-        public static void LoadSavedGames(string a)
+        public static void LoadSaveGame(string a)
         {
             var fileName = a;
             var path = Path.Combine(FileDirectory, fileName);
