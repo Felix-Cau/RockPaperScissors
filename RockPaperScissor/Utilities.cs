@@ -60,22 +60,6 @@ namespace RockPaperScissors
             Console.WriteLine();
         }
 
-        //public static string CheckForCorrectLoadFileName(string a)
-        //{
-        //    var filename = a;
-        //    var path = Path.Combine(FileDirectory, filename);
-        //    if (File.Exists(path))
-        //    {
-        //        return filename;
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine(MessageHandler.LoadGameNameError);
-        //    }
-
-
-        //}
-
         //Delete Save Files function goes here!
     }
 }

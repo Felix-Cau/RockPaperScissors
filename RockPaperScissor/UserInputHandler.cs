@@ -57,8 +57,6 @@ namespace RockPaperScissors
                     {
                         Console.WriteLine(MessageHandler.LoadGameNameError);
                     }
-                    //fileName = Utilities.CheckForCorrectLoadFileName(userInput);
-                    //keepAsking = false;
                 }
                 else
                 {
