@@ -45,12 +45,13 @@ namespace RockPaperScissors
             {
                 Console.WriteLine("Enter the name of the save file you wish to load:\nIMPORTANT! IT'S CASE SENSITIVE!");
                 string? userInput = Console.ReadLine();
-                if (!String.IsNullOrEmpty(userInput))
+                var userInputFileName = userInput.Trim();
+                if (!String.IsNullOrEmpty(userInputFileName))
                 {
-                    var path = Path.Combine(Utilities.FileDirectory, userInput);
+                    var path = Path.Combine(Utilities.FileDirectory, userInputFileName);
                     if (File.Exists(path))
                     {
-                        fileName = userInput;
+                        fileName = userInputFileName;
                         keepAsking = false;
                     }
                     else
