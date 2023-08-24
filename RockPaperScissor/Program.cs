@@ -58,14 +58,22 @@ do
             break;
         case "5": //Save game
             //Add previously saved game view thingie
-            var fileName = UserInputHandler.AskUserToNameSaveFile();
-            Utilities.SaveGame(fileName);
+            var saveFileName = UserInputHandler.AskUserToNameSaveFile();
+            Utilities.SaveGame(saveFileName);
             Console.WriteLine(MessageHandler.SaveGameMessage);
             Console.WriteLine(MessageHandler.PressAnyKey);
             Console.ReadKey();
             Console.Clear();
             break;
         case "6": //Load game
+            Utilities.CheckAndDisplaySaveFileNames();
+            UserInputHandler.AskForSaveFileName();
+            var loadFileName = Console.ReadLine();
+            Utilities.LoadSaveGame(loadFileName);
+            Console.WriteLine(MessageHandler.LoadGameMessage);
+            Console.WriteLine(MessageHandler.PressAnyKey);
+            Console.ReadKey();
+            Console.Clear();
             break;
         case "7":
             keepGoing = false;

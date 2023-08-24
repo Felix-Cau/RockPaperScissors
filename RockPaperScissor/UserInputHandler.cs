@@ -35,5 +35,10 @@ namespace RockPaperScissors
             } while (keepAsking == true );
             return fileName;
         }
+
+        public static void AskForSaveFileName()
+        {
+            Console.WriteLine("Enter the name of the save file you wish to load.\nIMPORTANT! IT'S CASE SENSITIVE!");
+        }
     }
 }

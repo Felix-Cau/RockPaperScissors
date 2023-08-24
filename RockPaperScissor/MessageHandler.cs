@@ -27,6 +27,7 @@ namespace RockPaperScissors
         public static string PressAnyKey => "Press any key to continue.";
         public static string ResetMessage => "Resetting the game.";
         public static string SaveGameMessage => "Saved game successfully!";
+        public static string LoadGameMessage => "Game loaded successfully!";
 
         public static void PrintComputerSelection(string a)
         {

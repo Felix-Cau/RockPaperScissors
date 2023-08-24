@@ -12,6 +12,7 @@ namespace RockPaperScissors
     public class Utilities
     {
         private static string FileDirectory = @"C:\development\rockpaperscissors\data\";
+        
 
         public static void CheckForExistingDirectory()
         {
@@ -45,6 +46,15 @@ namespace RockPaperScissors
             GameResults.UserWin = gameResultsOutput.userWin;
             GameResults.Tie = gameResultsOutput.tie;
             GameResults.ComputerWin = gameResultsOutput.computerWin;
+        }
+
+        public static void CheckAndDisplaySaveFileNames()
+        {
+            string[] saveFileNames = Directory.GetFiles(FileDirectory);
+            foreach (string fileName in saveFileNames)
+            {
+                Console.WriteLine(fileName);
+            }
         }
     }
 }
