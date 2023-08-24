@@ -11,7 +11,7 @@ namespace RockPaperScissors
 {
     public class Utilities
     {
-        private static string FileDirectory = @"C:\development\rockpaperscissors\data\";
+        public static string FileDirectory = @"C:\development\rockpaperscissors\data\";
         
 
         public static void CheckForExistingDirectory()
@@ -50,11 +50,32 @@ namespace RockPaperScissors
 
         public static void CheckAndDisplaySaveFileNames()
         {
-            string[] saveFileNames = Directory.GetFiles(FileDirectory);
-            foreach (string fileName in saveFileNames)
+            DirectoryInfo saveFileNames = new DirectoryInfo(FileDirectory);
+            Console.WriteLine();
+            foreach (var file in saveFileNames.EnumerateFiles())
             {
-                Console.WriteLine(fileName);
+                Console.WriteLine(file.Name);
+                
             }
+            Console.WriteLine();
         }
+
+        //public static string CheckForCorrectLoadFileName(string a)
+        //{
+        //    var filename = a;
+        //    var path = Path.Combine(FileDirectory, filename);
+        //    if (File.Exists(path))
+        //    {
+        //        return filename;
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(MessageHandler.LoadGameNameError);
+        //    }
+
+
+        //}
+
+        //Delete Save Files function goes here!
     }
 }

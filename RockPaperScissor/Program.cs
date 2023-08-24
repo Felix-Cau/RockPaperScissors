@@ -67,8 +67,7 @@ do
             break;
         case "6": //Load game
             Utilities.CheckAndDisplaySaveFileNames();
-            UserInputHandler.AskForSaveFileName();
-            var loadFileName = Console.ReadLine();
+            var loadFileName = UserInputHandler.AskForSaveFileName();
             Utilities.LoadSaveGame(loadFileName);
             Console.WriteLine(MessageHandler.LoadGameMessage);
             Console.WriteLine(MessageHandler.PressAnyKey);

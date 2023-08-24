@@ -36,9 +36,39 @@ namespace RockPaperScissors
             return fileName;
         }
 
-        public static void AskForSaveFileName()
+        public static string AskForSaveFileName()
         {
-            Console.WriteLine("Enter the name of the save file you wish to load.\nIMPORTANT! IT'S CASE SENSITIVE!");
+            var keepAsking = true;
+            var fileName = "";
+
+            do
+            {
+                Console.WriteLine("Enter the name of the save file you wish to load:\nIMPORTANT! IT'S CASE SENSITIVE!");
+                string? userInput = Console.ReadLine();
+                if (!String.IsNullOrEmpty(userInput))
+                {
+                    var path = Path.Combine(Utilities.FileDirectory, userInput);
+                    if (File.Exists(path))
+                    {
+                        fileName = userInput;
+                        keepAsking = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine(MessageHandler.LoadGameNameError);
+                    }
+                    //fileName = Utilities.CheckForCorrectLoadFileName(userInput);
+                    //keepAsking = false;
+                }
+                else
+                {
+                    Console.WriteLine(MessageHandler.LoadGameNameError);
+                }
+            } while ( keepAsking == true );
+            return fileName;
+            
         }
+
+
     }
 }

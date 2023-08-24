@@ -28,6 +28,7 @@ namespace RockPaperScissors
         public static string ResetMessage => "Resetting the game.";
         public static string SaveGameMessage => "Saved game successfully!";
         public static string LoadGameMessage => "Game loaded successfully!";
+        public static string LoadGameNameError => "You must enter a valid save file name.";
 
         public static void PrintComputerSelection(string a)
         {
