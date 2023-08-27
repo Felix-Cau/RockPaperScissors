@@ -60,6 +60,11 @@ namespace RockPaperScissors
             Console.WriteLine();
         }
 
-        //Delete Save Files function goes here!
+        public static void DeleteSaveGameFile(string a)
+        {
+            var fileName = a;
+            var path = Path.Combine(FileDirectory, fileName);
+            File.Delete(path);
+        }
     }
 }

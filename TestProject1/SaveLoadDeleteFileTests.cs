@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace TestProject1
 {
-    public class SaveLoadFileTests
+    public class SaveLoadDeleteFileTests
     {
         [Fact]
         public void SaveGameFiles_AndCorrectDataIsWrittenTest()
@@ -37,6 +37,7 @@ namespace TestProject1
             string fileName = "testSaveGame.json";
             string fileDirectory = @"C:\development\rockpaperscissors\data\";
             string path = Path.Combine(fileDirectory, fileName);
+            Utilities.SaveGame(fileName);
 
             //Act
             Utilities.LoadSaveGame(fileName);
@@ -45,6 +46,22 @@ namespace TestProject1
             var jsonGameResultLoadedData = File.ReadAllText(path);
             SaveFiles gameResultsLoadedData = JsonSerializer.Deserialize<SaveFiles> (jsonGameResultLoadedData);
             Assert.True((gameResultsLoadedData.userWin == GameResults.UserWin) && (gameResultsLoadedData.tie == GameResults.Tie) && (gameResultsLoadedData.computerWin == GameResults.ComputerWin));
+        }
+
+        [Fact]
+        public void DeleteGameFilesTest()
+        {
+            //Arrange
+            string fileName = "testSaveGame.json";
+            string fileDirectory = @"C:\development\rockpaperscissors\data\";
+            string path = Path.Combine(fileDirectory, fileName);
+            Utilities.SaveGame(fileName);
+
+            //Act
+            Utilities.DeleteSaveGameFile(fileName);
+
+            //Assert
+            Assert.False(File.Exists(path));
         }
     }
 }

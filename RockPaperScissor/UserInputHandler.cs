@@ -36,14 +36,14 @@ namespace RockPaperScissors
             return fileName;
         }
 
-        public static string AskForSaveFileName()
+        public static string AskForFileName()
         {
             var keepAsking = true;
             var fileName = "";
 
             do
             {
-                Console.WriteLine("Enter the name of the save file you wish to load:\nIMPORTANT! IT'S CASE SENSITIVE!");
+                Console.WriteLine("Enter the name of the file you want to select:\nIMPORTANT! IT'S CASE SENSITIVE!");
                 string? userInput = Console.ReadLine();
                 var userInputFileName = userInput.Trim();
                 if (!String.IsNullOrEmpty(userInputFileName))
@@ -56,12 +56,12 @@ namespace RockPaperScissors
                     }
                     else
                     {
-                        Console.WriteLine(MessageHandler.LoadGameNameError);
+                        Console.WriteLine(MessageHandler.FileNameError);
                     }
                 }
                 else
                 {
-                    Console.WriteLine(MessageHandler.LoadGameNameError);
+                    Console.WriteLine(MessageHandler.FileNameError);
                 }
             } while ( keepAsking == true );
             return fileName;

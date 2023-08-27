@@ -67,14 +67,23 @@ do
             break;
         case "6": //Load game
             Utilities.CheckAndDisplaySaveFileNames();
-            var loadFileName = UserInputHandler.AskForSaveFileName();
+            var loadFileName = UserInputHandler.AskForFileName();
             Utilities.LoadSaveGame(loadFileName);
             Console.WriteLine(MessageHandler.LoadGameMessage);
             Console.WriteLine(MessageHandler.PressAnyKey);
             Console.ReadKey();
             Console.Clear();
             break;
-        case "7":
+        case "7": //Delete Save game file
+            Utilities.CheckAndDisplaySaveFileNames();
+            var deleteFileName = UserInputHandler.AskForFileName();
+            Utilities.DeleteSaveGameFile(deleteFileName);
+            Console.WriteLine(MessageHandler.SaveFileDeleted);
+            Console.WriteLine(MessageHandler.PressAnyKey);
+            Console.ReadKey();
+            Console.Clear();
+            break;
+        case "8":
             keepGoing = false;
             Console.WriteLine(MessageHandler.ExitingProgram);
             Console.ReadKey();

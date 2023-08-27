@@ -25,7 +25,8 @@ namespace RockPaperScissors
                 "4. Reset game and start over.",
                 "5. Save game.",
                 "6. Load game.",
-                "7. End this torture, exit program."
+                "7. Delete Save game file.",
+                "8. End this torture, exit program."
             };
 
             foreach (var option in operationOptions)
